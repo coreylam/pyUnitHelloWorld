@@ -1,0 +1,21 @@
+testSize (__main__.WidgetTestCase) ... ok
+testResize (__main__.WidgetTestCase) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+testSize (__main__.WidgetTestCase) ... ok
+testResize (__main__.WidgetTestCase) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+testSize (__main__.WidgetTestCase) ... ok
+testResize (__main__.WidgetTestCase) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
