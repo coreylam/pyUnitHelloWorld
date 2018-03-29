@@ -187,7 +187,7 @@ class Template_mixin(object):
 
     DEFAULT_TITLE = '单元测试报告'
     DEFAULT_DESCRIPTION = ''
-    DEFAULT_TESTER='最棒QA'
+    DEFAULT_TESTER='测试人员'
 
     # ------------------------------------------------------------------------
     # HTML Template
@@ -308,7 +308,7 @@ function html_escape(s) {
 
     STYLESHEET_TMPL = """
 <style type="text/css" media="screen">
-body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 80%; }
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 150%; }
 table       { font-size: 100%; }
 
 /* -- heading ---------------------------------------------------------------------- */
@@ -369,7 +369,7 @@ table       { font-size: 100%; }
 <col align='right' />
 <col align='right' />
 </colgroup>
-<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 14px;">
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 16px;">
     <td>用例集/测试用例</td>
     <td>总计</td>
     <td>通过</td>
@@ -411,8 +411,8 @@ table       { font-size: 100%; }
 
     <!-- 默认展开错误信息 -Findyou -->
     <button id='btn_%(tid)s' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_%(tid)s'>%(status)s</button>
-    <div id='div_%(tid)s' class="collapse in">
-    <pre>
+    <div id='div_%(tid)s' class="collapse in" >
+    <pre style ="text-align: left">
     %(script)s
     </pre>
     </div>
