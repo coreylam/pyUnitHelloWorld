@@ -57,7 +57,7 @@ class WidgetTestCase(unittest.TestCase):
     @log
     def testResize(self):
         self.widget.resize(100, 100)
-        self.assertEqual(self.widget.getSize(), (100, 100))
+        self.assertEqual(self.widget.getSize(), (1020, 100))
 
     @log
     def runTest(self):
@@ -111,6 +111,7 @@ if __name__ == "__main__":
 
     #===========================================================
     # 将结果用HTML报告的形式输出
+    # 资料来源 :http://tungwaiyip.info/software/HTMLTestRunner.html
     # suite = gen_suite()
     # with open('HTMLReport.html', 'w') as f:
     #     runner = HTMLTestRunner(stream=f,
@@ -125,7 +126,7 @@ if __name__ == "__main__":
     # 中文HTML结果的输出, 资料来源:https://github.com/findyou/HTMLTestRunnerCN
     import HTMLTestRunnerCN
     suite = gen_suite()
-    with open('HTMLReportCN.html', 'w') as f:
+    with open('res/HTMLReportCN.html', 'w') as f:
         runner = HTMLTestRunnerCN.HTMLTestRunner(
             stream=f,
             title=u'Widget单元测试报告',
